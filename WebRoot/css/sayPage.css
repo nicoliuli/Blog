@@ -1,0 +1,65 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+a{
+	text-decoration: none;
+}
+li{
+	list-style: none;
+}
+body{
+	background: url("body_bg.jpg");
+}
+#top{
+	background: #48525E;
+	width: 100%;
+	height:42px;
+}
+#top div{
+	width: 962px;
+	height:40px;
+	margin: 0 auto;
+}
+#box{
+	margin-top:50px;
+	width:100%;
+}
+#box #show{
+	width:960px;
+	height:500px;
+	margin:0 auto;
+	position: relative;
+}
+#box #show form #say{
+	width:100%;
+	height:400px;
+	position: absolute;
+	left: 0px;
+	top:0px;
+	font-size:20px;
+	text-indent: 20px;
+}
+#box #show form #submit{
+	position: absolute;
+	top:450px;
+	left:430px;
+	width:100px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 9px;
+	padding-bottom: 9px;
+	background: #185EA6;
+	color: white;
+	font-weight: bold;
+	border: none;
+	border-radius: 3px;
+}
+#foot{
+	margin-top: 100px;
+	width: 100%;
+}
+#foot div{
+	width: 1172px;
+	margin: 0 auto;
+}

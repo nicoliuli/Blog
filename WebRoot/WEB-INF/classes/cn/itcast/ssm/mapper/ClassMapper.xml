@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="cn.itcast.ssm.mapper.ClassMapper">
+	
+	
+	
+	<!-- 将新注册的用户的文章分类添加到数据库中 -->
+	<insert id="addClass" parameterType="cn.itcast.ssm.pojo.Classes">
+		insert into class(user_id,classes) values(#{user_id},#{classes})
+	</insert>
+	
+	<!-- 查询用户的分类 ,根据userid-->
+	<select id="getClassesByUserId" parameterType="int" resultType="cn.itcast.ssm.pojo.Classes">
+		select * from class where user_id=#{id}
+	</select>
+	
+	
+</mapper>

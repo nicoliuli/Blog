@@ -1,0 +1,112 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+a{
+	text-decoration: none;
+}
+li{
+	list-style: none;
+}
+#box{
+	width: 100%;
+}
+#box #show{
+	width:900px;
+	height: 500px;
+	margin: 0 auto;
+	margin-top: 61px;
+	position: relative;
+}
+#box #show #imgR{
+	position: absolute;
+	top:0px;
+	left: 0px;
+	width:509px;
+}
+#box #show #in{
+	position: absolute;
+	top: 0px;
+	right:0px;
+	width: 357px;
+	height: 450px;
+	border: 1px solid #EAEAEA;
+}
+#box #show #in #text1{
+	position: absolute;
+	top: 39px;
+	left: 31px;
+	color: #747474;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 14px;
+	font-weight: 500;
+}
+#box #show #in form #warning{
+	color:red;
+	font-size:12px;
+	position: absolute;
+	left:31px;
+	top:70px;
+}
+#box #show #in form #username{
+	position: absolute;
+	left: 31px;
+	top:85px;
+	width: 283px;
+	height: 37px;
+	border: 2px solid #E1E1E1;
+	font-size: 15px;
+	text-indent: 20px;
+}
+#box #show #in form #password{
+	position: absolute;
+	left: 31px;
+	top:146px;
+	width: 283px;
+	height: 37px;
+	border: 2px solid #E1E1E1;
+	font-size: 15px;
+	text-indent: 20px;
+}
+#box #show #in form #submit{
+	position: absolute;
+	left: 31px;
+	top:244px; 
+	width: 287px;
+	height: 44px;
+	background: #DC3C00;
+	border: none;
+	font-size: 20px;
+	color: #FFFFFF;
+}
+#box #show #in #bottom{
+	width: 100%;
+	height: 150px;
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	border-top:1px solid #EEEEEE;
+}
+#box #show #in #bottom #text2{
+	position: absolute;
+	left: 31px;
+	top:23px;
+	font-size: 14px;
+	color: #666;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+#box #show #in #bottom img{
+	position: absolute;
+	left: 31px;
+	top:48px;
+}
+#foot{
+	width: 100%;
+	border-top: 1px solid #F0F0F0;
+}
+#foot div{
+	width: 1172px;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+

@@ -1,0 +1,126 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+a{
+	text-decoration: none;
+}
+li{
+	list-style: none;
+}
+#box{
+	width: 100%;
+}
+#box #show{
+	width: 982px;
+	height: 1000px;
+	margin: 0 auto;
+	position: relative;
+}
+#box #show #login{
+	position: absolute;
+	left: 681px;
+	top:8px;
+	font-style: normal;
+	color: #333;
+	font-size: 14px;
+}
+#box #show #login:hover{
+	color: red;
+}
+#box #show #register{
+	position: absolute;	
+	left: 729px;
+	top:8px;
+	font-style: normal;
+	color: #333;
+	font-size: 14px;
+}
+#box #show #register:hover{
+	color: red;
+}
+#box #show #help{
+	position: absolute;	
+	left: 778px;
+	top:8px;
+	font-style: normal;
+	color: #333;
+	font-size: 14px;
+}
+#box #show #help:hover{
+	color: red;
+}
+
+#box #show #search{
+	position: absolute;
+	top:4px;
+	left: 810px;
+	height: 25px;
+}
+#box #show img{
+	position: absolute;
+}
+#box #show #index1{
+	position: absolute;
+	left:0px;
+	top:30px;
+}
+#box #show #index2{
+	right:0px;
+	top:30px;
+}
+#box #show #index3{
+	left:0px;
+	top:125px;
+}
+#box #show #index4{
+	right:0px;
+	top:125px;
+}
+#box #show #index5{
+	left:0px;
+	top:220px;
+}
+#box #show #index6{
+	left:0px;
+	top:315px;
+}
+#box #show #lunbo{
+	width: 300px;
+	height: 217px;
+	position: absolute;
+	left: 680px;
+	top:315px;
+	position: relative;
+}
+#box #show #lunbo #list{
+	width: 90px;
+	margin:0 auto;
+	position: absolute;
+	left: 103px;
+	top:208px;
+}
+#box #show #lunbo #list li{
+	float: left;
+	width: 10px;
+	height: 10px;
+	margin-left: 8px;
+	border-radius: 5px;
+	background: #999999;
+}
+#box #show #index7{
+	right:0px;
+	top:554px;
+}
+#box #show #index8{
+	left:0px;
+	top:855px;
+}
+#box #show #index9{
+	right:0px;
+	top:855px;
+}
+#box #show #index10{
+	left:0px;
+	top:1100px;
+}

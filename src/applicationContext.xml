@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+      xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd
+           http://www.springframework.org/schema/aop
+           http://www.springframework.org/schema/aop/spring-aop.xsd
+            http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context.xsd
+           http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd
+           http://www.springframework.org/schema/mvc
+			http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+           
+   
+   	<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+   		<property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+   		<property name="url" value="jdbc:mysql://localhost:3306/blog"/>
+   		<property name="username" value="root"/>
+   		<property name="password" value="mysqladmin"/>
+   </bean> 
+	
+	
+    <!-- 配置SqlSessionFactory,目的是的到SqlSessionFactory对象-->
+	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+		<property name="dataSource" ref="dataSource"></property>
+		<!-- 加载SqlMapConfig.xml配置文件 -->
+		<property name="configLocation" value="classpath:SqlMapConfig.xml"></property>
+	</bean>
+	
+	<mvc:annotation-driven conversion-service="conversionService"/>
+  <!-- 配置视图解析器 -->
+  <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver"></bean>
+  
+	<!-- 配置转化器 -->
+	<bean id="conversionService" class="org.springframework.format.support.FormattingConversionServiceFactoryBean">
+  	<!--FormattingConversionServiceFactoryBean中有一个属性名为converters的属性  -->
+  	<property name="converters">
+  		<list>
+  			<!-- 注入自定义的参数绑定转化类 -->
+  			<bean class="cn.itcast.ssm.converter.DateConverter"></bean>
+  		</list>
+  	</property>
+  </bean>
+  <!-- 配置拦截器 -->
+	<mvc:interceptors>
+		<!-- 多个拦截器顺序执行 -->
+		<mvc:interceptor>
+			<!-- /**表示拦截所有url，包括子url -->
+			<mvc:mapping path="/**"/>
+			<!-- 自定义的拦截器的类 -->
+			<bean class="cn.itcast.ssm.interceptor.HandlerInterceptor"></bean>
+		</mvc:interceptor>
+	</mvc:interceptors>
+  
+	<context:component-scan base-package="cn.itcast.ssm"></context:component-scan>
+	<import resource="config/spring/user.xml"/>
+  
+</beans>

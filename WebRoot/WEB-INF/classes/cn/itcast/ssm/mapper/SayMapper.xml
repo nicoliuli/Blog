@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="cn.itcast.ssm.mapper.SayMapper">
+	<!-- 将用户的评论插入say表中 -->
+	<insert id="say" parameterType="cn.itcast.ssm.pojo.Say">
+		insert into say(id,userid,tipid,detail) values(#{id},#{userid},#{tipid},#{detail})
+	</insert>
+	
+	<!-- 查看所有的评论，根据tipid -->
+	<select id="getAllSay" parameterType="int" resultType="cn.itcast.ssm.pojo.Say">
+		<!--
+			select id,userid,tipid,detail,username from say where tipid=#{tipid}
+		-->
+		select 
+			say.id id,
+			say.userid userid,
+			say.detail detail,
+			say.tipid tipid,
+			user.username username
+		from say,user
+ 		where tipid=#{tipid} and say.id=user.id
+	</select>
+	
+
+</mapper>
+

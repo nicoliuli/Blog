@@ -1,0 +1,36 @@
+create table user(
+	id int primary key auto_increment,
+	username varchar(30),
+	password varchar(30)
+);
+
+create table class(
+	user_id int,
+	classes varchar(30),
+	foreign key (user_id) references user(id)
+);
+
+create table tip(
+	id int primary key auto_increment,
+	user_id int,
+	clazz  varchar(30),
+	time date,
+	title  varchar(100),
+	detail  varchar(300),
+	foreign key (user_id) references user(id),
+	foreign key (clazz)  references class(classes)
+);
+create table say(
+	id  int,	
+	userid int,	
+	tipid int,	
+	detail  varchar(300)
+);
+create table upload(
+	userid int,
+	username varchar(30),
+	namereal varchar(50),
+	nameserver varchar(100),
+	detail varchar(1024),
+	foreign key (userid) references user(id)
+);

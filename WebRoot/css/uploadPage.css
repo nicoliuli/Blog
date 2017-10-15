@@ -1,0 +1,109 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+a{
+	text-decoration: none;
+}
+li{
+	list-style: none;
+}
+#top{
+	background: #48525E;
+	width: 100%;
+	height:42px;
+}
+#top div{
+	width: 962px;
+	height:40px;
+	margin: 0 auto;
+}
+#box{
+	width:100%;
+	margin-top:50px;
+}
+#box #show{
+	width:730px;
+	height:400px;
+	margin:0 auto;
+	border:1px solid #DDDDDD;
+}
+#box #show form{
+	position: relative;
+}
+#box #show form #selectFile{
+	position: absolute;
+	top:50px;
+	left:60px;
+	height:40px;
+	width:132px;
+}
+#box #show form #text1{
+	position: absolute;
+	top:110px;
+	left:60px;
+}
+#box #show form select{
+	position: absolute;
+	top:110px;
+	left:130px;
+}
+#box #show form #text2{
+	position: absolute;
+	top:150px;
+	left:60px;
+}
+#box #show form #detail{
+	position: absolute;
+	left:130px;
+	top:150px;
+	width:510px;
+	height:130px;
+	text-indent: 10px;
+}
+#box #show form #submit{
+	position: absolute;
+	width:178px;
+	height:30px;
+	position: absolute;
+	left:60px;
+	top:300px;
+}
+#box #show form #message{
+	position: absolute;
+	left:330px;
+	top:350px;
+	font-size:40px;
+	border:1px solid orange;
+}
+#box #show form #all{
+	position: absolute;;
+	left:60px;
+	top:350px;
+	border:1px solid red;
+	height:25px;
+	width:500px;
+	border-radius: 5px;
+}
+#box #show form #all #pre{
+	width:0px;
+	background: blue;
+	height:25px;
+	opacity:0.4;
+	filter:alpha(opacity=40);
+}
+#box #show form #process{
+	position: absolute;
+	left:60px;
+	top:350px;
+	font-size:20px;
+}
+
+#foot{
+	margin-top: 100px;
+	width: 100%;
+}
+#foot div{
+	width: 1172px;
+	margin: 0 auto;
+}

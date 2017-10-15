@@ -1,0 +1,161 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+a{
+	text-decoration: none;
+}
+li{
+	list-style: none;
+}
+#top{
+	width:100%;
+	height: 41px;
+	background: #48525E;
+}
+#top div{
+	margin:0 auto;
+	width:960px;
+	height:40px;
+}
+#show{
+	margin:0 auto;
+	width:960px;
+	height:200px;
+}
+#show #title{
+	width:100%;
+	height:38px;
+	position: relative;
+}
+#show #title p{
+	position: absolute;
+	top:15px;
+	font-size: 12px;
+    font-family: Verdana, "Lucida Grande", Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+#show #title #text1{
+	left:6px;
+}
+#show #title #text2{
+	left:617px;
+}
+#show #title #text3{
+	left:724px;
+}
+#show #title #text4{
+	left:853px;
+}
+#show .box{
+	width:100%;
+	height: 40px;
+	position: relative;
+	border-bottom: 1px solid #EEEEEE;
+}
+#show .box a:hover{
+	text-decoration: underline;
+}
+#show .box .title_detail{
+	color: #3B5998;
+	position: absolute;
+	top:13px;
+	left:6px;
+	font-size: 12px;
+    font-family: Verdana, "Lucida Grande", Arial, Helvetica, sans-serif;
+}
+#show .box .classes{
+	color: #3B5998;
+	position: absolute;
+	top:13px;
+	left:617px;
+	font-size: 12px;
+    font-family: Verdana, "Lucida Grande", Arial, Helvetica, sans-serif;
+}
+#show .box .say{
+	position: absolute;
+	top:13px;
+	left:723px;
+	color: #3B5998;
+	font-size: 12px;
+    font-family: Verdana, "Lucida Grande", Arial, Helvetica, sans-serif;
+}
+#show .box .allSay{
+	color: #3B5998;
+	position: absolute;
+	top:13px;
+	left:839px;
+	font-size: 12px;
+    font-family: Verdana, "Lucida Grande", Arial, Helvetica, sans-serif;
+}
+
+
+
+#show #bar{
+	width:100%;
+	height:100px;
+
+	margin-top:50px;
+}
+#show #bar #box{
+	margin:0 auto;
+	width:400px;
+	height:50px;
+}
+#show #bar #box .prePage{
+	display:block;
+	float:left;
+	width:58px;
+	height:24px;
+	border:1px solid #DBE5EE;
+	color:#333;
+	font: normal 12px/22px Arial, Helvetica, sans-serif;
+	text-align: center;
+	margin-right:10px;
+}
+#show #bar #box .prePage:hover{
+	background:#07519A;
+	color:white;
+}
+#show #bar #box .nextPage{
+	display:block;
+	float:left;
+	display:block;
+	float:left;
+	width:58px;
+	height:24px;
+	border:1px solid #DBE5EE;
+	color:#333;
+	font: normal 12px/22px Arial, Helvetica, sans-serif;
+	text-align: center;
+	margin-right:10px;
+}
+#show #bar #box .nextPage:hover{
+	background:#07519A;
+	color:white;
+}
+#show #bar #box .page{
+	display:block;
+	float:left;
+	height:24px;
+	width:24px;
+	margin-right:10px;
+	border:1px solid #DBE5EE;
+	color:#333;
+	font: normal 12px/22px Arial, Helvetica, sans-serif;
+	text-align: center;
+}
+#show #bar #box .page:hover{
+	background:#07519A;
+	color:white;
+}
+
+#show #foot{
+	margin-top:80px;
+	wihth;100%;
+}
+#show #foot div{
+	width: 1172px;
+	margin: 0 auto;
+	
+}

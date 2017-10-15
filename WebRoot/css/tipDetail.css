@@ -1,0 +1,102 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+a{
+	text-decoration: none;
+}
+li{
+	list-style: none;
+}
+body{
+	background: url("body_bg.jpg");
+}
+#top{
+	background: #48525E;
+	width: 100%;
+	height:42px;
+}
+#top div{
+	width: 962px;
+	height:40px;
+	margin: 0 auto;
+}
+#box{
+	width: 100%;
+}
+#box #show{
+	width: 962px;
+	height: 120px;
+	margin: 0 auto;
+	margin-top:100px;
+	border:1px solid #ccc;
+	position: relative;
+	background:white;
+}
+#box #show a{
+	position: absolute;
+	color:black;
+	font-size:30px;
+}
+#box #show a:hover{
+	color: red;
+	text-decoration: underline;
+}
+#box #show  #text1{
+	position: absolute;
+	top:50px;
+	left:0px;
+	font-size: 12px;
+   	font-family: Verdana, "Lucida Grande", Arial, Helvetica, sans-serif;
+   	color: black;
+   	font-weight: bold;
+}
+
+
+#box #show  #text2{
+	position: absolute;
+	left: 70px;
+	top:50px;
+	font-size: 14px;
+  	color: black;
+}
+#box #show  #text3{
+	position: absolute;
+	left: 0px;
+	top:90px;
+	font-size: 12px;
+   	font-family: Verdana, "Lucida Grande", Arial, Helvetica, sans-serif;
+   	color: black;
+   	font-weight: bold;
+}
+#box #show #text4{
+	position: absolute;
+	left: 70px;
+	top:90px;
+	font-size: 14px;
+  	color: black;
+}
+#box #show  #text5{
+	position: absolute;
+	left: 0px;
+	top:130px;
+	font-size: 12px;
+   	font-family: Verdana, "Lucida Grande", Arial, Helvetica, sans-serif;
+   	color: white;
+   	font-weight: bold;
+}
+#box #show #text6{
+	position: absolute;
+	left: 0px;
+	top:150px;
+	font-size: 14px;
+  	color: black;
+  	width:100%;
+  	overflow:hidden;
+  	text-overflow:ellipsis;/*超出部分显示省略号*/
+  	line-height: 30px;
+  	text-indent: 20px;
+  	padding: 20px;
+  	font-size: 16px;
+  	background:white;
+}

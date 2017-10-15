@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="cn.itcast.ssm.mapper.TipMapper">
+	
+	<!-- 将用户发表的帖子插入到数据库中 -->
+	<insert id="insertTip" parameterType="cn.itcast.ssm.pojo.Tip" useGeneratedKeys="true" keyProperty="id">
+		insert into tip(id,user_id,title,detail,clazz,time) values(#{id},#{userid},#{title},#{detail},#{classes},#{time})
+	</insert>
+	
+	<!-- 查看我发表的所有帖子,根据用户id -->
+	<select id="getALlTip" parameterType="int" resultType="cn.itcast.ssm.pojo.Tip">
+		select id,user_id userid,title,detail,clazz classes,time from tip where user_id = #{id} order by time desc
+	</select>
+	
+	<!-- 根据tipid删除帖子 -->
+	<delete id="deleteTipById" parameterType="cn.itcast.ssm.pojo.TipUser">
+		delete from tip where id = #{tip.id} and user_id=#{user.id}
+	</delete>
+	
+	<!-- 查询出帖子的详细内容,根据tipid和userid -->
+	<select id="getDetail" parameterType="cn.itcast.ssm.pojo.TipUser" resultType="cn.itcast.ssm.pojo.Tip">
+		select id,user_id userid,title,detail,clazz,time from tip where id=#{tip.id} and user_id=#{user.id}
+	</select>
+	
+	<!-- 当修改帖子分类时，根据userid查询出该用户所有的分类 -->
+	<select id="getAllClassByUserId" parameterType="int" resultType="java.lang.String">
+		select classes from class where user_id=#{id}
+	</select>
+	
+	<!-- 根据userid和tipid修改帖子内容 -->
+	<update id="updateTipById" parameterType="cn.itcast.ssm.pojo.TipUser">
+		update tip set clazz=#{tip.classes},title=#{tip.title},detail=#{tip.detail} where id=#{tip.id} and user_id=#{tip.userid} 
+	</update>
+	
+	<!-- 首页，查看所有的tip -->
+	<select id="getTipList" parameterType="int" resultType="cn.itcast.ssm.pojo.Tip">
+		select id, user_id userid,time,title,detail,clazz classes from tip order by time desc limit #{id},5
+	</select>
+	
+	<!-- 查询tip的内容，根据tipid和userid ，返回Tip-->
+	<select id="getNeirong" parameterType="cn.itcast.ssm.pojo.Tip" resultType="cn.itcast.ssm.pojo.Tip">
+		select id,user_id,clazz classes,time,title,detail from tip where id=#{id} and user_id=#{userid}
+	</select>
+</mapper>

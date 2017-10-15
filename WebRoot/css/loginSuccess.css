@@ -1,0 +1,57 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+a{
+	text-decoration: none;
+}
+li{
+	list-style: none;
+}
+#top{
+	background: #48525E;
+	width: 100%;
+	height:42px;
+}
+#top div{
+	width: 962px;
+	height:42px;
+	margin: 0 auto;
+}
+#list{
+	width: 100%;
+	height: 52px;
+	background: #333333;
+}
+#list #show{
+	width:960px;
+	margin: 0 auto;
+	border:1px solid white;
+	position: relative;
+}
+#list #show div{
+	width: 137px;
+	height: 52px;
+	float: left;
+}
+#list #show div a{
+	font-size: 16px;
+	color: #eee;
+	font-family: Microsoft Yahei;
+	line-height: 52px;
+}
+#lunbo{
+	width: 100%;
+}
+#lunbo img{
+	display: block;
+	width: 100%;
+}
+#foot{
+	margin-top: 100px;
+	width: 100%;
+}
+#foot div{
+	width: 1172px;
+	margin: 0 auto;
+}
